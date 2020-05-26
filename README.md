@@ -12,7 +12,6 @@ Flutter SDK: `>=1.12.13`
 * dartx
 * `DateFormat` from `intl`.
 * OKToast.
-* `Permission`, `PermissionStatus` from `permission_handler`.
 * Constants:
   * `lessThanOne`
   * `lessThanZero`
