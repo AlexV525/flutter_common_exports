@@ -14,7 +14,6 @@ dependencies:
     sdk: flutter
 
   oktoast: 2.3.2
-  permission_handler: 5.0.0+hotfix.6
 
 dependency_overrides:
   dartx: ^0.4.1

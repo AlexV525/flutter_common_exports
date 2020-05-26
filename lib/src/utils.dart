@@ -6,7 +6,6 @@ import 'dart:developer';
 
 import 'package:flutter/foundation.dart';
 import 'package:oktoast/oktoast.dart';
-import 'package:permission_handler/permission_handler.dart';
 
 export 'utils/input_utils.dart';
 
@@ -38,17 +37,3 @@ Future<bool> doubleBackExit() async {
 
 /// Just do nothing. :)
 void doNothing() {}
-
-/// Check permissions and only return whether they succeed or not.
-Future<bool> checkPermissions(List<Permission> permissions) async {
-  try {
-    final Map<Permission, PermissionStatus> status =
-        await permissions.request();
-    return !status.values.any(
-      (PermissionStatus p) => p != PermissionStatus.granted,
-    );
-  } catch (e) {
-    realDebugPrint('Error when requesting permission: $e');
-    return false;
-  }
-}
