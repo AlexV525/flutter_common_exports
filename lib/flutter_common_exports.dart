@@ -9,7 +9,6 @@ export 'dart:io' show Cookie;
 export 'package:dartx/dartx.dart';
 export 'package:intl/intl.dart' show DateFormat;
 export 'package:oktoast/oktoast.dart';
-export 'package:pedantic/pedantic.dart' show unawaited;
 export 'package:permission_handler/permission_handler.dart'
     show Permission, PermissionStatus;
 

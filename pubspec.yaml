@@ -4,8 +4,8 @@ version: 0.1.0
 homepage: https://github.com/AlexVincent525/flutter_common_exports
 
 environment:
-  sdk: ">=2.8.1 <3.0.0"
-  flutter: ">=1.17.0"
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.12.13"
 
 dependencies:
   flutter:
@@ -14,7 +14,6 @@ dependencies:
     sdk: flutter
 
   oktoast: 2.3.2
-  pedantic: 1.9.0
   permission_handler: 5.0.0+hotfix.6
 
 dependency_overrides:
