@@ -2,13 +2,16 @@
 
 A Flutter package includes some common exportation of constants and utils.
 
+## Requirement
+
+Flutter SDK: `>=1.12.13`
+
 ## Contents
 
 * `Cookie` from `dart:io`.
 * dartx
 * `DateFormat` from `intl`.
 * OKToast.
-* `unawaited` from `pedantic`.
 * `Permission`, `PermissionStatus` from `permission_handler`.
 * Constants:
   * `lessThanOne`
