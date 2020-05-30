@@ -23,6 +23,9 @@ Flutter SDK: `>=1.12.13`
   * `localizationsDelegates`
   * `supportedLocales`
 * Extensions:
+  * `BrightnessExtension`:
+    * `brightness.isDark`
+    * `brightness.isLight`
   * `BuildContextExtension`:
     * `context.mediaQuery`
     * `context.themeData`
