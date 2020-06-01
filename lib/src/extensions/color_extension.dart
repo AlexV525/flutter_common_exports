@@ -5,12 +5,12 @@
 import 'package:flutter/material.dart';
 
 extension ColorExtension on Color {
+  bool get isTransparent => this == Colors.transparent;
+
   MaterialColor get swatch => Colors.primaries.firstWhere(
         (Color c) => c.value == value,
         orElse: () => _swatch,
       );
-
-  MaterialColor get _swatch => MaterialColor(value, getMaterialColorValues);
 
   Map<int, Color> get getMaterialColorValues => <int, Color>{
         50: _swatchShade(50),
@@ -24,6 +24,8 @@ extension ColorExtension on Color {
         800: _swatchShade(800),
         900: _swatchShade(900),
       };
+
+  MaterialColor get _swatch => MaterialColor(value, getMaterialColorValues);
 
   Color _swatchShade(int swatchValue) => HSLColor.fromColor(this)
       .withLightness(1 - (swatchValue / 1000))
