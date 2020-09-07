@@ -1,6 +1,6 @@
 name: flutter_common_exports
 description: A Flutter package includes some common exportation of constants and utils.
-version: 0.1.0
+version: 0.1.1
 homepage: https://github.com/AlexVincent525/flutter_common_exports
 
 environment:
@@ -13,12 +13,8 @@ dependencies:
   flutter_localizations:
     sdk: flutter
 
-  dartx: ^0.4.1
-  oktoast: 2.3.2
-
-dependency_overrides:
-  dartx: ^0.4.1
-  intl: ^0.16.1
+  oktoast: ^2.3.2
+  intl: any
 
 flutter:
   uses-material-design: true

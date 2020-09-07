@@ -6,7 +6,6 @@ library flutter_common_exports;
 
 export 'dart:io' show Cookie;
 
-export 'package:dartx/dartx.dart';
 export 'package:intl/intl.dart' show DateFormat;
 export 'package:oktoast/oktoast.dart';
 
